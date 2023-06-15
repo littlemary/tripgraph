@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  width:  100%;
+  height: 48px;
+  margin: 0 0 16px;
+  padding: 0 23px;
+  opacity: 0.8;
+  
+  background-color: #29384d;
+  img{
+    margin-top: 2px;;
+  }
+  .header__nav{
+    margin-left: 28px;
+    display:flex;
+    justify-content: start;
+    grid-gap:20px;
+    a {
+      font-family: $mainFont;
+      font-size: 15px;
+      font-weight: normal;
+      color: #fff;
+      text-decoration: none;
+      line-height: 1.33;
+      i{
+        margin-right: 10px;
+      }
+    }
+  }
+}

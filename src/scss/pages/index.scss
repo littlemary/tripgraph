@@ -1,0 +1,33 @@
+.index-content{
+  width: 100%;
+  margin: 0 auto;
+  padding: 160px 200px 144px 200px;
+ .start-logo{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 81px;
+  } 
+  .start-form{
+    margin: 0 auto;
+    
+    .start-email{
+    margin-bottom: 16px;
+    width: 368px;
+    padding: 15px auto;
+
+    opacity: 0.6;
+    border-radius: 24px;
+    background-color: #242b3c;
+
+    font-family: $mainFont;
+    font-size: 17px;
+    font-weight: normal;
+    color: #5f6e8f;
+    }
+    .start-submit{
+      color: red;
+      
+    }
+  }
+  
+}

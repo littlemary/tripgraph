@@ -1,0 +1,176 @@
+@@include("blocks/head.html")
+<body>
+<div class="main_container">
+  @@include("blocks/header.html",{
+    "nav": false
+  })
+  <div class="grid-container">
+    <div class="leftsitebar">
+      @@include("blocks/leftsidebar.html", {
+        "add": true,
+        "trip": true,
+        "dashboard": true,
+        "settings": true,
+      })
+
+    </div>
+    
+    <main>
+      <section class="section_statistic">
+        <div class="container">
+          <div class="statistic_deliver">
+            <h2 class="statistic-title">distance</h2>
+            <div class="deliver-num">2345</div>
+            <div class="deliver-desc">miles on the road</div>
+          
+            <h3 class="statistic-subtitle">By foot</h3>
+            <div class="bar">
+              <i class="icon-walking"></i>
+              <div class='progressBar' style="--per:70%;">
+                <div class='progressBarRect'>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="statistic-subtitle">By bicycle</h3>
+            <div class="bar">
+              <i class="icon-bycicle"></i>
+              <div class='progressBar' style="--per:20%;">
+                <div class='progressBarRect'>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="statistic-subtitle">By car</h3>
+            <div class="bar">
+              <i class="icon-car"></i>
+              <div class='progressBar' style="--per:40%;">
+                <div class='progressBarRect'>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="statistic-time">
+            <h2 class="statistic-title">Time</h2>
+            <div class="container-time">
+              <div class="pie animate" style="--p:90;--c: #f1cd51"> 
+                <span class="text"><i>346</i> days</span>
+              </div>
+              <div class="time_descr"><span>19 days</span>left until 1 year</div>
+            </div>
+          </div>
+
+          <div class="statistic-events">
+            <h2 class="statistic-title">Events</h2>
+            <div class="events-content">
+              <div class="item">
+                <p><span>13</span>countries</p>
+                <p><span>25</span>cities</p>
+                <p><span>384</span>photos</p>
+              </div>
+              <div class="item">
+                <p><span>32</span>friends</p>
+                <p><span>345</span>likes</p>
+                <p><span>12</span>trips</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_gallery">
+        <div class="container">
+          <div class="gradleft"></div>
+          <div class="gradright"></div>
+          <div class="gallery">
+              <div class="item">
+                <img class="item__img" src="./img/gallery/photo7.jpg" alt="">
+                <div class="item__title">Amsterdam</div>
+                <div class="item__desc"><span>10</span> photos</div>
+                <a href="#" class="item__btn">Details</a>
+              </div>
+          
+              <div class="item">
+                <img class="item__img" src="./img/gallery/photo2.jpg" alt="">
+                <div class="item__title">Austria</div>
+                <div class="item__desc"><span>25</span> photos</div>
+                <a href="#" class="item__btn">Details</a>
+              </div>
+
+              <div class="item">
+                <img class="item__img" src="./img/gallery/photo3.jpg" alt="">
+                <div class="item__title">Santa Crus</div>
+                <div class="item__desc"><span>10</span> photos</div>
+                <a href="#" class="item__btn">Details</a>
+              </div>
+          
+          </div>
+          <div class="content">
+            <h3 class="dashboard_subtitle">Places</h3>
+          </div>
+        </div>
+      </section>
+    
+      <section class="section_favorite">
+        <div class="container">
+
+          <div class="item">
+            <div class="card">
+              <img class="card-photo" src="img/favorite.jpg" alt="">
+              <div class="card-gradient"></div>
+              <div class="card-content">
+                <h3 class="dashboard_subtitle">Favorite photo</h3>
+                <div class="favorite_stat fb">
+                  <span>1 234</span>
+                  <i class="icon-fb"></i>
+                </div>
+                <div class="favorite_stat twitter">
+                  <span>334 567</span>
+                  <i class="icon-twitter"></i>
+                </div>
+                <div class="favorite_stat insta">
+                  <span>4 657</span>
+                  <i class="icon-insta"></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card">
+              <h3></h3>
+              <img class="card-photo" src="img/emotion.jpg" alt=""> -->
+              <div class="card-gradient"></div>
+              <div class="card-content">
+                <h3 class="dashboard_subtitle">Emotions</h3>
+                  
+                <div class="emotion-item">
+                  <div class="emotion-bar" style="--emotion-per: 100px"></div>
+                  <i class="icon-smile-bad"></i>
+                </div>
+                <div class="emotion-item">
+                  <div class="emotion-bar" style="--emotion-per: 190px"></div>
+                  <i class="icon-smile-normal"></i>
+                </div>
+                <div class="emotion-item">
+                  <div class="emotion-bar" style="--emotion-per: 200px"></div>
+                  <i class="icon-smile-good"></i>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    </div>
+  
+  </div>
+   
+  </body>
+  </html>

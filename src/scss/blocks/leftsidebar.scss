@@ -1,0 +1,56 @@
+.leftsitebar{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  nav{
+    .left__nav-item{
+      list-style: none;
+      min-height: 38px;
+      width: 244px;
+
+      .left__nav-link{
+      
+        padding: 10px 20px 10px 27px ;
+        font-family: $mainFont;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #fff;
+        text-decoration: none;
+        i{
+          margin-right: 13px;
+        }
+        &:hover{
+          background-color: #607ca1;
+        }
+      }
+  }
+  }
+  .author{
+    margin-left: 28px;
+    margin-right: 63px;
+    margin-bottom: 56px;
+    .author-logo{
+      img{
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+      }
+    }
+    .author-name{
+      font-family: $mainFont;
+      font-size: 19px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.26;
+      letter-spacing: normal;
+      text-align: left;
+      color: #fefefe;
+    }
+  }
+}

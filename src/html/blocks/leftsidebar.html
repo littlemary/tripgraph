@@ -1,0 +1,22 @@
+  <nav>
+    <ul class="left__nav">
+      @@if (add==true){
+        <li class="left__nav-item"><a class="left__nav-link" href="#"><i class="icon-plus"></i>Add new</a></li>
+      }
+      @@if (trip==true){
+        <li class="left__nav-item"><a class="left__nav-link  active"  href="trip.html"><i class="icon-pin"></i>Trips</a></li>
+      }
+      @@if (dashboard==true){
+        <li class="left__nav-item"><a class="left__nav-link"  href="dashboard.html"><i class="icon-dashboard"></i>Dashboard</a></li>
+      }
+      @@if (settings==true){
+        <li class="left__nav-item"><a class="left__nav-link"  href="#"><i class="icon-settings"></i>Settings</a></li>
+      }
+    </ul>
+
+  </nav>
+
+  <div class="author">
+    <div class="author-logo"><img src="img/avatar.jpg" alt=""></div>
+    <div class="author-name">William  Robertson</div>
+  </div>

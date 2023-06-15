@@ -1,0 +1,105 @@
+.container_trip{
+  display: flex;
+  justify-content: space-around;
+  // gap: 15px;
+  flex-wrap: wrap;
+  .trip-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    .trip-card{
+      position: relative;
+      width: 272px;
+      height: 153px;
+      .card-photo{
+        position: absolute;
+        width: 272px;
+        height: 153px;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        
+        top: 0;
+        z-index: 1;  
+        // display: none;    
+      }
+      .card-gradient{
+        position: absolute;
+        width: 272px;
+        height: 107px;
+        background-image: linear-gradient(to bottom, rgba(39, 53, 71, 0), #1a2e4a);
+
+        bottom: 0;
+        z-index: 2;
+      }
+      .card-name{
+        position: absolute;
+        margin-left: 16px;
+        font-family: $mainFont;
+        font-size: 23px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.87;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+
+        bottom: 43px;
+        z-index: 3;
+      }
+      .card-rating{
+        position: absolute;
+        margin-left: 16px;
+        color: #fff;
+        
+        bottom: 17px;
+        z-index: 4;
+        .checked{
+          color: #f1cd51;
+        }
+      }
+      
+    }
+    .trip-descr{
+      width: 272px;
+      height: 150px;
+      padding: 16px;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-color: #fff;
+      .trip-title{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 9px;
+        border-bottom: 1px solid  #e7ebef;
+        margin-bottom: 10px;
+        .trip-date{
+          font-family: $mainFont;
+          font-size: 23px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 0.87;
+          letter-spacing: normal;
+          text-align: left;
+          color: #010101;
+          span{
+            font-size: 21px;
+            font-weight: normal;
+          }
+        }
+        .trip-link{
+          a{
+            text-decoration: none;
+            font-family: $mainFont;
+            font-size: 21px;
+            font-weight: 500;
+            color: #ced6dd;
+          }
+        }
+      }
+    }
+  }
+  
+}
