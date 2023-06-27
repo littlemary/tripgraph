@@ -146,6 +146,7 @@
 }
 
 .section_gallery{
+  position: relative;
   margin: 0 auto;
   margin-bottom: 16px;
 
@@ -154,17 +155,30 @@
   background-image: url("../img/bg-gallery.png") center center;
   overflow: hidden;
   .container{
-    position: relative;
+
     .gallery{
-      position: absolute;
-      top: 28px;
-      left: -60px;
+      padding: 20px 0;
+      position: relative;
       z-index: 1;  
       
       display: flex;
       justify-content: center;
       gap: 58px;
-      width: 700px;
+      width: 560px;
+      &-wrap{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      &-inner{
+        margin-left: 200px;
+        margin-right: 200px;
+        display: flex;
+        gap: 100px;
+        transform: translateX(-280px);
+        transition: all 0.3s ease 0s;
+        // transition: all 4s ease 0s;
+      }
       .item{
         text-align: center;
         &__img{
@@ -211,9 +225,9 @@
     .gradleft{
       position: absolute;
       left: 0;
-
+      top: 0;
       width: 165px;
-      height: 336px;
+      height: 100%;
       background-image: linear-gradient(to right,  #1a2e4a, rgba(39, 53, 71, 0));
       z-index: 2;
     }
